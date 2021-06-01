@@ -12,7 +12,10 @@
 .u-section-1 .u-icon-1 {
   color: rgb(255, 255, 255) !important;
 }
-
+.u-section-1 .u-table-1 {
+  width: 1020px;
+  margin: 30px auto 0;
+}
 .u-section-1 .u-text-1 {
   font-weight: 900;
   margin: -12px 0 30px;
@@ -22,4 +25,10 @@
 
 .u-section-2 .u-text-1 {
   margin: 20px 0 60px;
+}
+.u-section-2 .u-table-1 {
+  border-style: none;
+  align-self: center;
+  margin: 0 0 0 auto;
+  padding: 8px 300px 8px 300px;
 }
