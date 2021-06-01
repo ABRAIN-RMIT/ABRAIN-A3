@@ -222,18 +222,159 @@
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-accordion-pane-2" id="accordion-2435" aria-labelledby="link-accordion-2435">
               <div class="u-container-layout u-container-layout-2">
-                <p class="u-text u-text-default u-text-2">Plans and progress for UI prototype goes here</p>
+                <p class="u-text u-text-default u-text-2">We began by firstly researching several competitor interfaces to get design inspiration. We had considered discussing our brand colour (Green Thumb) and its consistency on the page, how many certain plants we have to include for the prototype sample, as well as covering basic UI on an application (such as links, page dimensions, and its accessibility). Some examples of design templates we based it from are:</p>
+                <img src="images/bunnyears.png" alt="" style="height:525px;">
+                <img src="images/unnamed.png" alt="style="height:300px;"">
+                <img src="images/unnamed (1).png" alt="style="height:300px;"">
+                <p>Continuing on from our discussion, we gave a few thoughts on how the other competitors do their UI very well, as well as what should have been improved for their part. Using that, we made Green Thumb different from the rest by creating the best versions of the others. For example, one of the competitors is <b>Plantr</b>, but their main flaw is that they got heaps of advertisements on the app, and their AI didn’t offer much help outside of identifying species. In addition, they force the user to manually enter watering suggestions and care instructions by the user instead of being automatically included. Green Thumb made sure we are an ad-free app, as well as our AI is advanced enough to give consistent data (when the soil probe is used as well). In this way, we are considerably standing out from our competitors.</p>
+                <p>Moreover, our group drew up a rough mock up of the customer journey, talking about the further decisions we should make based on previous discussions and considerations when they are implemented.</p>
+                <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/UI-1.png" style="width:100%">
+                    <div class="text">Setting Up Plant Profiles</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/UI-2.png" style="width:100%">
+                    <div class="text">Setting Up Plant Profiles</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/UI-3.png" style="width:100%">
+                    <div class="text">Disease Diagnosis</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/UI-4.png" style="width:100%">
+                    <div class="text">Help</div>
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+              <br>
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <p>Finally, we started creating the interface in figma. We designed buttons on some of the buttons on the plant profile that would change based on probe readings (the rule of design - show, don’t tell) so we wanted to keep it image based with minimal text. We considered that it's important to have more visualised images instead of more texts. There are the examples for that:</p>
+                <img src=images/buttons.png alt="" class="center">
+                <p>During the process, however, we did encounter several challenges. They are:
+                  <ul>
+                    <li><b>The creation itself: </b>All of the group assigned from this interface (Bridget/Arvee/Idris) aren’t experts and are first-time users. (Though Bridget took the lead with getting everything set up as she has a bit of experience on the interface). The team took a bit of time to eventually know their way around it.</li>
+                    <li><b>The main interfaces: </b>We needed to make sure our app covers the important interfaces for Green Thumb. Initially, we had several main buttons, such as Plant Profile, Diagnostics, Forums, FAQs, Chatbot, Settings but further discussion made us cut some of these and reduce it to stay consistent.</li>
+                    <li><b>Manipulation and movement of pages: </b>We wanted to make sure the figma works like it's intended as if someone is looking through an app realistically. And so we did spend a while to consider the designated buttons but we kept on adding and removing features repetitively to make sure we don’t add unnecessary stuff and stick on only for the criteria.</li>
+                  </ul>
+                </p>
+                <p>We also got to the point where there were functionality flaws in figma. We had to do something with the camera because getting the camera to the figma is complicated. In the end however, the manipulated this when we got an iphone’s camera interface screenshotted with black pic and pasted our desired images on that black area. In this way it looked like the app went to the phone’s camera and took an image. Also, we had trouble visualisation on plant health and history on the app. Though, we were able to find a solution for the plant health, it was initially in the form of percentage but the data will result inconsistently. And so we separated it into 3 parts, soil acidity, temperature and moisture that have visual images representing its current condition (shown above).</p>
+                <p>And other changes that we made is the (1) added settings button. As per one of our team, Idris, he had suggested if we have an application there should be a settings page for it, and (2) changed Serial Code to QR Code; as QR code organises the person to use the camera functionality making it ease of access rather than typing a bunch of characters and pressing enter.</p>
+                <p>Nevertheless, even with these challenges and functionality flaws, we were able to implement everything that we wanted to put in. There is this FAQs page section though but we decided it wasn’t adding value to the app and to the customer experience. The team realised we can do this over the Chatbot interface instead, rather than having a specific page full of dull texts when we can feature something more creative and utilizing the figma to our advantage.</p>
+                <p><b>Testing phase and feedback</b>
+                  <ul>
+                    <li>Initially, the photos weren’t showing. This is because some of them got too high resolution that it takes a lot of time until it fully loads as well as we had a bunch of large files with many assets loading at the same time. In the end, we had to edit those pictures to a lower resolution (but quality is still good) and reduce the large file into separate pages.</li>
+                    <li>Improvements made to the prototype after the testing: Just minor adjustments such as making sure the position of textboxes and images doesn’t move page-to-page, and the linking for all pages in making sure they’re accessible where they want to go easily.</li>
+                  </ul>
+                </p>
+                <p><b><a href="https://www.figma.com/proto/rYKuNifdCXvdPWxtqBnFvU/Green-Thumb-UI-Prototype?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1">The Final Prototype is available here</a></b></p>
+
               </div>
             </div>
           </div>
           <div class="u-accordion-item">
             <a class="u-accordion-link u-button-style u-custom-font u-text-active-palette-4-base u-text-white u-accordion-link-3" id="link-accordion-c23a" aria-controls="accordion-c23a" aria-selected="false">
-              <span class="u-accordion-link-text">Database Entity Relationship Diagram and Cybersecurity Plan</span><span class="u-accordion-link-icon u-icon u-icon-rectangle u-text-active-palette-1-light-1 u-text-hover-palette-2-base u-text-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3170"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-3170"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+              <span class="u-accordion-link-text">Database Concept and Cybersecurity Plan</span><span class="u-accordion-link-icon u-icon u-icon-rectangle u-text-active-palette-1-light-1 u-text-hover-palette-2-base u-text-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3170"></use></svg><svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-3170"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
     c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg></span>
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-accordion-pane-3" id="accordion-c23a" aria-labelledby="link-accordion-c23a">
               <div class="u-container-layout u-valign-top u-container-layout-3">
-                <p class="u-text u-text-3">Plans and progress for database goes here</p>
+                <p class="u-text u-text-3">Green Thumb in essence is a database that tracks plant health. Therefore designing and securing the database is an essential step in working toward the completion of this project. As no members of our team have experience programming databases, we determined that we would craft a concept of our databases and the relationships between them. The first logical step was to work out the types of data we would be collecting.</p>
+                <img src="images/databasebrainstorm.png" alt="" class="center">
+                <p>Now that we had identified the types of data that Green Thumb will be collecting and classified our entities and attributes, we had to assign our data types and keys. Names and general information are assigned to the data type of varchar and numerical information is assigned to the data type of integer. As for special information that requires decimal points, such as temperature, the data type of double is used.</p>
+                <p>Then we defined the relationships between the data in an ER Diagram using Lucidchart. We chose to use Lucidchart as it allowed us to create a diagram of our database without any need for programming. See below.</p>
+                <img src="images/ERD.png" alt:"" class="center">
+                <p>Although not normally represented within a database ER diagram, we wanted to demonstrate what data the Green Thumb AI would have access to. We felt this was important because the AI needs to have access to all the probe, disease and species data in order to feed the machine learning model and provide users with insights into their long term plant health. Additionally, this data is essential for our chatbot to be able to answer users questions. As such, we created a new frame within the ER diagram to show the type of data that is being accessed and monitored by Green Thumb’s AI. </p>
+                <p>When it comes to hosting our secure database and also collecting and storing user information, we looked into online hosting servers such as HostGator or GoDaddy. Both are great options, however, for the time being, the option we will proceed with is to host our own server. This would be logical as we will need to save some resources as a small start up. In the future, it may be necessary to consider outsourcing to services such as HostGator or GoDaddy to avoid maintenance costs, downtime issues such as power failure, essentially making a more efficient and stable server. It could also be worthwhile investing in a cloud service and having them manage our servers in the future.</p>
+                <p>To minimize the risks of data extraction, only relevant information will be stored/accessed on user’s devices and not the entire database. In terms of database software, there are two main options, SQL Server (MS SQL) is a database service created by Microsoft and the other being MySQL, an open-source option owned by Oracle Corporation. At this point in the project, either option will suffice, with the main trade off being flexibility of MySQL’s open-source nature and SQL Servers’ security. Both software will be able to upscale with the project as it gets bigger. Cloud computing is becoming more efficient and useful for organizations, so considering this option would be ideal as the project matures and the need for having this service arises. There are great options for achieving this such as: Microsoft Azure, Amazon Web Services and Oracle’s MySQL Cloud Service (for mySQL). As one of the team (Adrian) has previous, although limited, experience with using Oracle inventory database application in the past, we will opt to continue with mySQL. This can however be easily changed in the future if it is not wanted.</p>
+                <p>Here is a snippet of the code required to build the Green Thumb database within mySQL</p>
+                  <div class="u-table u-table-responsive u-table-1">
+                    <table class="u-table-entity">
+                      <colgroup>
+                        <col width="100%">
+                      </colgroup>
+                      <thead class="u-align-left u-table-header">
+                        <tr style="height: 46px;">
+                          <th class="u-border-3 u-border-palette-2-base u-table-cell">CREATE TABLE `Plant Profile` (<br>  `Customer_ID` Integer,<br>  `Botanical_name` Varchar,<br>  `Plant_nickname` USER-DEFINED,
+                            <br>`Uploaded_images` Integer,
+  <br>`Species_information` Varchar,
+  <br>`Probe_date` Datetime,
+  <br>`Actual_moisture` Double,
+  <br>`Actual_temperature` Double,
+  <br>`Actual_pH` Double,
+  <br>`Disease_diagnosis` Varchar
+<br>);
+<br><br>CREATE TABLE `Plant Species` (
+  <br>`Botanical_name` Varchar,
+  <br>`Reference_image` Integer,
+  <br>`Ideal_moisture` Double,
+  <br>`Ideal_temperature` Double,
+  <br>`Ideal_pH` Double,
+  <br>`Species_information` Varchar,
+  <br>PRIMARY KEY (`Botanical_name`)
+<br>);
+<br><br>CREATE TABLE `Customers` (
+  <br>`Customer_ID` Integer,
+  <br>`Username` USER-DEFINED,
+  <br>`Email_address` USER-DEFINED,
+  <br>PRIMARY KEY (`Customer_ID`)
+<br>);
+<br><br>CREATE TABLE `Probes` (
+  <br>`Product_ID` Integer,
+  <br>`Product_name` Varchar,
+  <br>`Price` Double,
+  <br>`QR_Code` Integer,
+<br>PRIMARY KEY (`Product_ID`)
+<br>);
+<br><br>CREATE TABLE `Plant Diseases` (
+  <br>`Disease_diagnosis` Varchar,
+  <br>`Reference_image` Integer,
+  <br>`Disease_moisture` Double,
+  <br>`Disease_temperature` Double,
+  <br>`Disease_pH` Double,
+  <br>`Susceptible_species` Varchar,
+  <br>`Disease_information` Varchar,
+  <br>PRIMARY KEY (`Disease_diagnosis`)
+<br>);
+<br><br>CREATE TABLE `Orders` (
+  <br>`Order_ID` Integer,
+  <br>`Date` Datetime,
+  <br>`Customer_ID` Integer,
+  <br>`Shipping_address` USER-DEFINED,
+  <br>`Product_ID` Integer,
+  <br>`QTY` Integer,
+  <br>`QR_Code` Integer,
+  <br>PRIMARY KEY (`Order_ID`),
+  <br>KEY `PK, FK` (`Product_ID`, `QR_Code`)
+);</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <p>With our finished ER Diagram we decided to address how we would protect our data. It became apparent that some of the information that we will be storing in the databases are private and confidential. This applies to both customer/user information but also the Plant species database that is owned by Green Thumb. After some research, we have come up with some potential strategies we can implement to secure our data, outlined below is our cybersecurity plan</p>
+                  <p>Databases contain lots of sensitive information, as far as the Green Thumb database is concerned some sensitive information will include: User’s shipping addresses, names and email addresses. The database will also have all the information and data relating to plant species and the relevant information pertaining to it. It would be easy for anyone with the appropriate skillset to access this information without the knowledge of Green Thumb and it’s users. The data leak can be damaging to both the organisation and it’s users.</p>
+                  <p>There are a variety of ways we can secure our databases. The potential security we can implement is Masking, Redaction and Encryption. We will also potentially implement a backup of the databases in the case of hardware malfunctions and system crashes.</p>
+                  <p>Masking is a strategy we can use to limit the amount of information that is visibly accessed. Information will appear as normal in the database, however some information will be substituted for “false” data or completely redacted. Similar to masking, redaction is the removal of visible information in a database. If the database cannot be read or if the sensitive information is covered up, it cannot be copied or stolen. Masking can be achieved in Database software such as MySQL.</p>
+                  <img src="images/masking.png" alt="" class="center">
+                  <p>Encryption converts the database into an unreadable format. If a user does not have the appropriate decryption key, it will not be readable. Encryption can be made possible through various applications, MySQL has some encryption capabilities, it is also possible to use other software such as Windows’ inbuilt encryption software BitLocker to encrypt the server the databases are located in. </p>
+                  <img src="images/encryption.png" alt="" class="center">
+                  <p>A database backup will be useful in the event that the original database is somehow compromised, destroyed or made un-accessible. With a backup you would be able to restore to previous versions of the database or restore the entire database when needed. This is made possible through software and services such as: ShadowProtect and Veeam, it is also possible to manage backups within MySQL. The management of backup systems could potentially be outsourced to other organizations.</p>
+                  <p>Accessibility of the database information can be limited within the organisation. Only authorised people can view certain sensitive information. The less accessible the data is, the less chance of a data breach. This can be done within database applications. In Green Thumb’s situation, MySQL provides appropriate tools to grant or restrict the access to the database to certain authorised users only.</p>
               </div>
             </div>
           </div>
