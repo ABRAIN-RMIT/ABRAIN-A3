@@ -303,78 +303,71 @@
                 <p>When it comes to hosting our secure database and also collecting and storing user information, we looked into online hosting servers such as HostGator or GoDaddy. Both are great options, however, for the time being, the option we will proceed with is to host our own server. This would be logical as we will need to save some resources as a small start up. In the future, it may be necessary to consider outsourcing to services such as HostGator or GoDaddy to avoid maintenance costs, downtime issues such as power failure, essentially making a more efficient and stable server. It could also be worthwhile investing in a cloud service and having them manage our servers in the future.</p>
                 <p>To minimize the risks of data extraction, only relevant information will be stored/accessed on user’s devices and not the entire database. In terms of database software, there are two main options, SQL Server (MS SQL) is a database service created by Microsoft and the other being MySQL, an open-source option owned by Oracle Corporation. At this point in the project, either option will suffice, with the main trade off being flexibility of MySQL’s open-source nature and SQL Servers’ security. Both software will be able to upscale with the project as it gets bigger. Cloud computing is becoming more efficient and useful for organizations, so considering this option would be ideal as the project matures and the need for having this service arises. There are great options for achieving this such as: Microsoft Azure, Amazon Web Services and Oracle’s MySQL Cloud Service (for mySQL). As one of the team (Adrian) has previous, although limited, experience with using Oracle inventory database application in the past, we will opt to continue with mySQL. This can however be easily changed in the future if it is not wanted.</p>
                 <p>Here is a snippet of the code required to build the Green Thumb database within mySQL</p>
-                  <div class="u-table u-table-responsive u-table-1">
-                    <table class="u-table-entity">
-                      <colgroup>
-                        <col width="100%">
-                      </colgroup>
-                      <thead class="u-align-left u-table-header">
-                        <tr style="height: 46px;">
-                          <th class="u-border-3 u-border-palette-2-base u-table-cell">CREATE TABLE `Plant Profile` (<br>  `Customer_ID` Integer,<br>  `Botanical_name` Varchar,<br>  `Plant_nickname` USER-DEFINED,
-                            <br>`Uploaded_images` Integer,
-  <br>`Species_information` Varchar,
-  <br>`Probe_date` Datetime,
-  <br>`Actual_moisture` Double,
-  <br>`Actual_temperature` Double,
-  <br>`Actual_pH` Double,
-  <br>`Disease_diagnosis` Varchar
-<br>);
-<br><br>CREATE TABLE `Plant Species` (
-  <br>`Botanical_name` Varchar,
-  <br>`Reference_image` Integer,
-  <br>`Ideal_moisture` Double,
-  <br>`Ideal_temperature` Double,
-  <br>`Ideal_pH` Double,
-  <br>`Species_information` Varchar,
-  <br>PRIMARY KEY (`Botanical_name`)
-<br>);
-<br><br>CREATE TABLE `Customers` (
-  <br>`Customer_ID` Integer,
-  <br>`Username` USER-DEFINED,
-  <br>`Email_address` USER-DEFINED,
-  <br>PRIMARY KEY (`Customer_ID`)
-<br>);
-<br><br>CREATE TABLE `Probes` (
-  <br>`Product_ID` Integer,
-  <br>`Product_name` Varchar,
-  <br>`Price` Double,
-  <br>`QR_Code` Integer,
-<br>PRIMARY KEY (`Product_ID`)
-<br>);
-<br><br>CREATE TABLE `Plant Diseases` (
-  <br>`Disease_diagnosis` Varchar,
-  <br>`Reference_image` Integer,
-  <br>`Disease_moisture` Double,
-  <br>`Disease_temperature` Double,
-  <br>`Disease_pH` Double,
-  <br>`Susceptible_species` Varchar,
-  <br>`Disease_information` Varchar,
-  <br>PRIMARY KEY (`Disease_diagnosis`)
-<br>);
-<br><br>CREATE TABLE `Orders` (
-  <br>`Order_ID` Integer,
-  <br>`Date` Datetime,
-  <br>`Customer_ID` Integer,
-  <br>`Shipping_address` USER-DEFINED,
-  <br>`Product_ID` Integer,
-  <br>`QTY` Integer,
-  <br>`QR_Code` Integer,
-  <br>PRIMARY KEY (`Order_ID`),
-  <br>KEY `PK, FK` (`Product_ID`, `QR_Code`)
-);</th>
-                        </tr>
-                      </thead>
-                    </table>
-                  </div>
-                  <p>With our finished ER Diagram we decided to address how we would protect our data. It became apparent that some of the information that we will be storing in the databases are private and confidential. This applies to both customer/user information but also the Plant species database that is owned by Green Thumb. After some research, we have come up with some potential strategies we can implement to secure our data, outlined below is our cybersecurity plan</p>
-                  <p>Databases contain lots of sensitive information, as far as the Green Thumb database is concerned some sensitive information will include: User’s shipping addresses, names and email addresses. The database will also have all the information and data relating to plant species and the relevant information pertaining to it. It would be easy for anyone with the appropriate skillset to access this information without the knowledge of Green Thumb and it’s users. The data leak can be damaging to both the organisation and it’s users.</p>
-                  <p>There are a variety of ways we can secure our databases. The potential security we can implement is Masking, Redaction and Encryption. We will also potentially implement a backup of the databases in the case of hardware malfunctions and system crashes.</p>
-                  <p>Masking is a strategy we can use to limit the amount of information that is visibly accessed. Information will appear as normal in the database, however some information will be substituted for “false” data or completely redacted. Similar to masking, redaction is the removal of visible information in a database. If the database cannot be read or if the sensitive information is covered up, it cannot be copied or stolen. Masking can be achieved in Database software such as MySQL.</p>
-                  <img src="images/masking.png" alt="" class="center">
-                  <p>Encryption converts the database into an unreadable format. If a user does not have the appropriate decryption key, it will not be readable. Encryption can be made possible through various applications, MySQL has some encryption capabilities, it is also possible to use other software such as Windows’ inbuilt encryption software BitLocker to encrypt the server the databases are located in. </p>
-                  <img src="images/encryption.png" alt="" class="center">
-                  <p>A database backup will be useful in the event that the original database is somehow compromised, destroyed or made un-accessible. With a backup you would be able to restore to previous versions of the database or restore the entire database when needed. This is made possible through software and services such as: ShadowProtect and Veeam, it is also possible to manage backups within MySQL. The management of backup systems could potentially be outsourced to other organizations.</p>
-                  <p>Accessibility of the database information can be limited within the organisation. Only authorised people can view certain sensitive information. The less accessible the data is, the less chance of a data breach. This can be done within database applications. In Green Thumb’s situation, MySQL provides appropriate tools to grant or restrict the access to the database to certain authorised users only.</p>
+                <div id="overflowTest" class="center">CREATE TABLE `Plant Profile` (
+                  <br>  `Customer_ID` Integer,
+                  <br>  `Botanical_name` Varchar,
+                  <br>  `Plant_nickname` USER-DEFINED,
+                  <br>`Uploaded_images` Integer,
+                  <br>`Species_information` Varchar,
+                  <br>`Probe_date` Datetime,
+                  <br>`Actual_moisture` Double,
+                  <br>`Actual_temperature` Double,
+                  <br>`Actual_pH` Double,
+                  <br>`Disease_diagnosis` Varchar
+                  <br>);
+                  <br><br>CREATE TABLE `Plant Species` (
+                  <br>`Botanical_name` Varchar,
+                  <br>`Reference_image` Integer,
+                  <br>`Ideal_moisture` Double,
+                  <br>`Ideal_temperature` Double,
+                  <br>`Ideal_pH` Double,
+                  <br>`Species_information` Varchar,
+                  <br>PRIMARY KEY (`Botanical_name`)
+                  <br>);
+                  <br><br>CREATE TABLE `Customers` (
+                  <br>`Customer_ID` Integer,
+                  <br>`Username` USER-DEFINED,
+                  <br>`Email_address` USER-DEFINED,
+                  <br>PRIMARY KEY (`Customer_ID`)
+                  <br>);
+                  <br><br>CREATE TABLE `Probes` (
+                  <br>`Product_ID` Integer,
+                  <br>`Product_name` Varchar,
+                  <br>`Price` Double,
+                  <br>`QR_Code` Integer,
+                  <br>PRIMARY KEY (`Product_ID`)
+                  <br>);
+                  <br><br>CREATE TABLE `Plant Diseases` (
+                  <br>`Disease_diagnosis` Varchar,
+                  <br>`Reference_image` Integer,
+                  <br>`Disease_moisture` Double,
+                  <br>`Disease_temperature` Double,
+                  <br>`Disease_pH` Double,
+                  <br>`Susceptible_species` Varchar,
+                  <br>`Disease_information` Varchar,
+                  <br>PRIMARY KEY (`Disease_diagnosis`)
+                  <br>);
+                  <br><br>CREATE TABLE `Orders` (
+                  <br>`Order_ID` Integer,
+                  <br>`Date` Datetime,
+                  <br>`Customer_ID` Integer,
+                  <br>`Shipping_address` USER-DEFINED,
+                  <br>`Product_ID` Integer,
+                  <br>`QTY` Integer,
+                  <br>`QR_Code` Integer,
+                  <br>PRIMARY KEY (`Order_ID`),
+                  <br>KEY `PK, FK` (`Product_ID`, `QR_Code`)
+                  <br>);
+                </div>
+                <p>With our finished ER Diagram we decided to address how we would protect our data. It became apparent that some of the information that we will be storing in the databases are private and confidential. This applies to both customer/user information but also the Plant species database that is owned by Green Thumb. After some research, we have come up with some potential strategies we can implement to secure our data, outlined below is our cybersecurity plan</p>
+                <p>Databases contain lots of sensitive information, as far as the Green Thumb database is concerned some sensitive information will include: User’s shipping addresses, names and email addresses. The database will also have all the information and data relating to plant species and the relevant information pertaining to it. It would be easy for anyone with the appropriate skillset to access this information without the knowledge of Green Thumb and it’s users. The data leak can be damaging to both the organisation and it’s users.</p>
+                <p>There are a variety of ways we can secure our databases. The potential security we can implement is Masking, Redaction and Encryption. We will also potentially implement a backup of the databases in the case of hardware malfunctions and system crashes.</p>
+                <p>Masking is a strategy we can use to limit the amount of information that is visibly accessed. Information will appear as normal in the database, however some information will be substituted for “false” data or completely redacted. Similar to masking, redaction is the removal of visible information in a database. If the database cannot be read or if the sensitive information is covered up, it cannot be copied or stolen. Masking can be achieved in Database software such as MySQL.</p>
+                <img src="images/masking.png" alt="" class="center">
+                <p>Encryption converts the database into an unreadable format. If a user does not have the appropriate decryption key, it will not be readable. Encryption can be made possible through various applications, MySQL has some encryption capabilities, it is also possible to use other software such as Windows’ inbuilt encryption software BitLocker to encrypt the server the databases are located in. </p>
+                <img src="images/encryption.png" alt="" class="center">
+                <p>A database backup will be useful in the event that the original database is somehow compromised, destroyed or made un-accessible. With a backup you would be able to restore to previous versions of the database or restore the entire database when needed. This is made possible through software and services such as: ShadowProtect and Veeam, it is also possible to manage backups within MySQL. The management of backup systems could potentially be outsourced to other organizations.</p>
+                <p>Accessibility of the database information can be limited within the organisation. Only authorised people can view certain sensitive information. The less accessible the data is, the less chance of a data breach. This can be done within database applications. In Green Thumb’s situation, MySQL provides appropriate tools to grant or restrict the access to the database to certain authorised users only.</p>
               </div>
             </div>
           </div>
