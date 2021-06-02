@@ -2,23 +2,308 @@
   min-height: 112px;
 }
 
-.u-section-1 .u-text-1 {
-  font-weight: 900;
-  margin: 30px 0 0;
-}
-
 .u-section-1 .u-btn-1 {
   border-style: none;
-  margin: -82px 0 60px auto;
+  align-self: center;
+  margin: 0 0 0 auto;
   padding: 8px 28px 8px 27px;
 }
 
 .u-section-1 .u-icon-1 {
   color: rgb(255, 255, 255) !important;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 900;
+  margin: -12px 0 30px;
 }.u-section-2 .u-sheet-1 {
   min-height: 165px;
 }
 
 .u-section-2 .u-text-1 {
   margin: 20px 0 60px;
+}
+
+.u-section-5 .u-accordion-1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.u-section-5 .u-accordion-link-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.u-section-5 .u-icon-1 {
+  height: 40px;
+  width: 40px;
+  background-image: none;
+}
+
+.u-section-5 .u-accordion-pane-1 {
+  min-height: 260px;
+}
+
+.u-section-5 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-5 .u-text-1 {
+  margin-top: 0;
+}
+
+.u-section-5 .u-accordion-link-2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.u-section-5 .u-icon-2 {
+  height: 40px;
+  width: 40px;
+  background-image: none;
+}
+
+.u-section-5 .u-accordion-pane-2 {
+  min-height: 260px;
+}
+
+.u-section-5 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-5 .u-text-2 {
+  margin-top: 0;
+}
+
+.u-section-5 .u-accordion-link-3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.u-section-5 .u-icon-3 {
+  height: 40px;
+  width: 40px;
+  background-image: none;
+}
+
+.u-section-5 .u-accordion-pane-3 {
+  min-height: 260px;
+}
+
+.u-section-5 .u-container-layout-3 {
+  padding: 30px;
+}
+
+.u-section-5 .u-text-3 {
+  margin: 0;
+}
+
+.u-section-5 .u-accordion-link-4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.u-section-5 .u-icon-4 {
+  height: 40px;
+  width: 40px;
+  background-image: none;
+}
+
+.u-section-5 .u-accordion-pane-4 {
+  min-height: 260px;
+}
+
+.u-section-5 .u-container-layout-4 {
+  padding: 30px;
+}
+
+.u-section-5 .u-text-4 {
+  margin-top: 0;
+}
+
+.u-section-5 .u-accordion-link-5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.u-section-5 .u-icon-5 {
+  height: 40px;
+  width: 40px;
+  background-image: none;
+}
+
+.u-section-5 .u-accordion-pane-5 {
+  min-height: 260px;
+}
+
+.u-section-5 .u-container-layout-5 {
+  padding: 30px;
+}
+
+.u-section-5 .u-text-5 {
+  margin-top: 0;
+}
+
+.u-section-5 .u-accordion-link-6 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.u-section-5 .u-icon-6 {
+  height: 40px;
+  width: 40px;
+  background-image: none;
+}
+
+.u-section-5 .u-accordion-pane-6 {
+  min-height: 260px;
+}
+
+.u-section-5 .u-container-layout-6 {
+  padding: 30px;
+}
+
+.u-section-5 .u-text-6 {
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-5 .u-sheet-1 {
+    min-height: 549px;
+  }
+
+  .u-section-5 .u-accordion-pane-1 {
+    height: auto;
+  }
+
+  .u-section-5 .u-accordion-pane-2 {
+    height: auto;
+  }
+
+  .u-section-5 .u-accordion-pane-3 {
+    height: auto;
+  }
+
+  .u-section-5 .u-accordion-pane-4 {
+    height: auto;
+  }
+
+  .u-section-5 .u-accordion-pane-5 {
+    height: auto;
+  }
+
+  .u-section-5 .u-accordion-pane-6 {
+    height: auto;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  height: 200px;
+  overflow: scroll;
+  border: 1px solid #ccc;
 }
