@@ -211,7 +211,13 @@
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-accordion-pane-1" id="accordion-aae7" aria-labelledby="link-accordion-aae7">
               <div class="u-container-layout u-container-layout-1">
-                <p class="u-text u-text-default u-text-1">Plans and progress for probe circuit goes here</p>
+                <p class="u-text u-text-default u-text-1">The original idea for the probe and its circuit was that we would use an Arduino nano but the team’s lead programmer and developer later found out that using a simple D1 Mini board would turn out to be much simpler as all we needed was for the data to be transmitted to the local network for the app to show the user rather than to store and do anything further to it before sending it via an ESP8266 network module. This drastically reduced the size of the Green Thumb to just a little bigger than a stick of gum. Furthermore, Nikhil also discovered that the DH22 air temperature and humidity sensor/module originally thought to be used could easily be damaged with soil being able to enter its housing either while planting, inserting or watering the plant/pot. So Nikhil found a better solution although it would make the final product a bit bulkier.
+The D1 Mini board could then be paired with the prototyping and designing app called Blynk.
+The Blynk app receives the values and converts them to digital readable characters from the analogue value if necessary and the developer, Nikhil has made an arrangement of different widgets which are to be dragged and dropped onto the interface.</p>
+<p>The group agreed to this new tech but unfortunately, there were delays with shipping. To avoid not having any artefacts for this probe, we created a schematic so we could visualise how the probe would work.</p>
+<p>This is the circuit created for the whole product with all the sensors and modules wired together.</p>
+<img src="images/schematic.jpeg" alt="" class="center">
+<p>The parts finally arrived and we built a working prototype. The main issues we encountered were that two major parts were cancelled by the supplier as they were out of stock. Hence we were unable to source new ones in time for the deadline. This resulted in the prototypes being half-finished but functional for at least one main aspect of it.</p>
               </div>
             </div>
           </div>
@@ -222,11 +228,11 @@
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-accordion-pane-2" id="accordion-2435" aria-labelledby="link-accordion-2435">
               <div class="u-container-layout u-container-layout-2">
-                <p class="u-text u-text-default u-text-2">We began by firstly researching several competitor interfaces to get design inspiration. We had considered discussing our brand colour (Green Thumb) and its consistency on the page, how many certain plants we have to include for the prototype sample, as well as covering basic UI on an application (such as links, page dimensions, and its accessibility). Some examples of design templates we based it from are:</p>
+                <p class="u-text u-text-default u-text-2">We began by firstly researching several of our competitor’s application interfaces to get design inspiration. We had considered our brand colour (Green Thumb) and its consistency on the page, how many certain plants we have to include for the prototype sample, as well as covering basic UI elements on an application (such as links, page dimensions, and its accessibility). Some examples of design templates we based it from are: </p>
                 <img src="images/bunnyears.png" alt="" style="height:525px;">
                 <img src="images/unnamed.png" alt="style="height:300px;"">
                 <img src="images/unnamed (1).png" alt="style="height:300px;"">
-                <p>Continuing on from our discussion, we gave a few thoughts on how the other competitors do their UI very well, as well as what should have been improved for their part. Using that, we made Green Thumb different from the rest by creating the best versions of the others. For example, one of the competitors is <b>Plantr</b>, but their main flaw is that they got heaps of advertisements on the app, and their AI didn’t offer much help outside of identifying species. In addition, they force the user to manually enter watering suggestions and care instructions by the user instead of being automatically included. Green Thumb made sure we are an ad-free app, as well as our AI is advanced enough to give consistent data (when the soil probe is used as well). In this way, we are considerably standing out from our competitors.</p>
+                <p>CContinuing on from our discussion, we thought about  how our competitors do their UI, in particular what they have done very well, as well as what they could have done to improve. Using that information, we made Green Thumb’s different from the rest by creating it with the inspiration from the best parts of our competitor’s UI. For example, one of the competitors is Plantr, but their main flaw is that they have got too many advertisements on their app, and their AI didn’t offer much help outside of identifying species. In addition, they force the user to manually enter watering suggestions and care instructions instead of being automatically included. We made sure that Green Thumb will be an ad-free app, as well as having a considerably advanced AI that can  give consistent data (when the soil probe is used as well). In this way, we are considerably standing out from our competitors. </p>
                 <p>Moreover, our group drew up a rough mock up of the customer journey, talking about the further decisions we should make based on previous discussions and considerations when they are implemented.</p>
                 <div class="slideshow-container">
                   <div class="mySlides fade">
@@ -264,25 +270,25 @@
                   <span class="dot" onclick="currentSlide(3)"></span>
                   <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
-                <p>Finally, we started creating the interface in figma. We designed buttons on some of the buttons on the plant profile that would change based on probe readings (the rule of design - show, don’t tell) so we wanted to keep it image based with minimal text. We considered that it's important to have more visualised images instead of more texts. There are the examples for that:</p>
+                <p>Finally, we started creating the interface with Figma. Initially when we created the buttons for the pages, it had a few texts alongside it. However in further contemplation between the team, the buttons have been redesigned. Some of them have a function that would change based on probe readings so we wanted to keep it image based with minimal text. We decided that it's more important to have visualised images instead of having more text. Below Are the examples of this:</p>
                 <img src=images/Buttons.png alt="" class="center">
                 <p>During the process, however, we did encounter several challenges. They are:
                   <ul>
-                    <li><b>The creation itself: </b>All of the group assigned from this interface (Bridget/Arvee/Idris) aren’t experts and are first-time users. (Though Bridget took the lead with getting everything set up as she has a bit of experience on the interface). The team took a bit of time to eventually know their way around it.</li>
-                    <li><b>The main interfaces: </b>We needed to make sure our app covers the important interfaces for Green Thumb. Initially, we had several main buttons, such as Plant Profile, Diagnostics, Forums, FAQs, Chatbot, Settings but further discussion made us cut some of these and reduce it to stay consistent.</li>
-                    <li><b>Manipulation and movement of pages: </b>We wanted to make sure the figma works like it's intended as if someone is looking through an app realistically. And so we did spend a while to consider the designated buttons but we kept on adding and removing features repetitively to make sure we don’t add unnecessary stuff and stick on only for the criteria.</li>
+                    <li><b>The creation itself: </b>he group assigned from this interface (Bridget/Arvee/Idris) aren’t experts and are first-time users. (Though Bridget took the lead with getting everything set up as she has a bit of experience on the interface). The team took a bit of time to learn how to use the application.</li>
+                    <li><b>The main interfaces: </b>We needed to make sure our app covers the important interfaces for Green Thumb. Initially, we had several main buttons, such as Plant Profile, Diagnostics, Forums, FAQs, Chatbot, Settings but after further discussion we decided to cut some of these and reduce it to stay more consistent.</li>
+                    <li><b>Manipulation and movement of pages: </b>We wanted to make sure the figma prototype works how it's intended, and as if users/testers are looking through our final application. We spent quite a bit of time considering the designated buttons, but we kept on adding and removing features to make sure we didn't add any unnecessary items and preserve content that is related to the criteria. </li>
                   </ul>
                 </p>
-                <p>We also got to the point where there were functionality flaws in figma. We had to do something with the camera because getting the camera to the figma is complicated. In the end however, the manipulated this when we got an iphone’s camera interface screenshotted with black pic and pasted our desired images on that black area. In this way it looked like the app went to the phone’s camera and took an image. Also, we had trouble visualisation on plant health and history on the app. Though, we were able to find a solution for the plant health, it was initially in the form of percentage but the data will result inconsistently. And so we separated it into 3 parts, soil acidity, temperature and moisture that have visual images representing its current condition (shown above).</p>
-                <p>And other changes that we made is the (1) added settings button. As per one of our team, Idris, he had suggested if we have an application there should be a settings page for it, and (2) changed Serial Code to QR Code; as QR code organises the person to use the camera functionality making it ease of access rather than typing a bunch of characters and pressing enter.</p>
-                <p>Nevertheless, even with these challenges and functionality flaws, we were able to implement everything that we wanted to put in. There is this FAQs page section though but we decided it wasn’t adding value to the app and to the customer experience. The team realised we can do this over the Chatbot interface instead, rather than having a specific page full of dull texts when we can feature something more creative and utilizing the figma to our advantage.</p>
-                <p><b>Testing phase and feedback</b>
+                <p>Eventually we got to the point where there were functionality flaws in the prototype. We had to do something with the camera because it is complicated to integrate it with figma. In the end however, the team overcame this obstacle by screenshotting an iphone’s camera interface and overlaid our desired images on top of the camera interface area. This way it looked like the app went to the phone’s camera and took an image. Also, we had trouble visualising plant health and history on the app. Though we were able to find a solution for the plant health, it was initially in the form of percentages but the resulting data would be inconsistent. We decided to separate it into 3 parts, soil acidity, temperature and moisture that have visual images representing its current condition (shown above).</p>
+                <p>Other changes that we made were (1) adding the settings button. One of our team members, Idris,had suggested if we have an application, there should be a settings page for it, and (2) changed Serial Code to QR Code; as QR code entices the user to use the camera function making it easier to access rather than typing a series of characters and pressing enter.</p>
+                <p>Nevertheless, even with these challenges and functionality flaws, we were able to implement everything that we originally planned to put in. There was an FAQs page section, though we decided it wasn’t adding value to the app and to the customer experience. The team realised we can do this over the Chatbot interface instead, rather than having a specific page full of dull text this enabled the “FAQ” to be more engaging  and more creative, additionally we were able to utilize figma’s features to our advantage. </p>
+                <p><b>Testing phase and feedback: </b>
                   <ul>
-                    <li>Initially, the photos weren’t showing. This is because some of them got too high resolution that it takes a lot of time until it fully loads as well as we had a bunch of large files with many assets loading at the same time. In the end, we had to edit those pictures to a lower resolution (but quality is still good) and reduce the large file into separate pages.</li>
-                    <li>Improvements made to the prototype after the testing: Just minor adjustments such as making sure the position of textboxes and images doesn’t move page-to-page, and the linking for all pages in making sure they’re accessible where they want to go easily.</li>
+                    <li>Initially, the photos weren’t showing up. This is because some of them were high resolution and it takes a lot of time until it is fully loaded. There were also a bunch of large files with many assets loading at the same time. In the end, we had to edit those pictures to a lower resolution (but quality is still good) and reduce the large file into separate pages.</li>
+                    <li>Improvements made to the prototype after the testing: Just minor adjustments such as making sure the position of textboxes and images doesn’t move page-to-page, and making sure the linking for all pages are accessible so users will know how to get to where they want to go easily.</li>
                   </ul>
                 </p>
-                <p><b><a href="https://www.figma.com/proto/rYKuNifdCXvdPWxtqBnFvU/Green-Thumb-UI-Prototype?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1">The Final Prototype is available here</a></b></p>
+                <p><b><a href="https://www.figma.com/proto/rYKuNifdCXvdPWxtqBnFvU/Green-Thumb-UI-Prototype?node-id=184%3A363&scaling=min-zoom&page-id=0%3A1">The Final Prototype is available here</a></b></p>
 
               </div>
             </div>
@@ -378,7 +384,89 @@
             </a>
             <div class="u-accordion-pane u-container-style u-expanded-width u-accordion-pane-4" id="accordion-078c" aria-labelledby="link-accordion-078c">
               <div class="u-container-layout u-container-layout-4">
-                <p class="u-text u-text-default u-text-4">Plans and progress for AI strategy goes here</p>
+                <p class="u-text u-text-default u-text-4">The Green Thumb Artificial Intelligence (AI) will consists of various elements including:
+                <ul>
+                  <li>A Chatbot to answer plant questions and solve technical queries when using app</li>
+                  <li>A Visual recognition system to identify plant species and disease</li>
+                  <li>Machine Learning models to classify plant health and disease via decision trees and provide long term health insights and analysis</li>
+                </ul>
+                </p>
+                <p>To build the Green Thumb AI we will use IBM’s Watson Studio. IBM Watson Studio allows us to build and deploy AI models on the IBM cloud. Within IBM Watson Studio we can access a range of different AI products that can be manipulated to fit the needs of Green Thumb. These products include:
+                  <div class="u-table u-table-responsive u-table-1">
+                    <table class="u-table-entity">
+                      <colgroup>
+                        <col width="30%">
+                        <col width="70%">
+                      </colgroup>
+                      <thead class="u-align-center u-table-header">
+                        <tr style="height: 46px;">
+                          <th class="u-border-3 u-border-palette-2-base u-table-cell">Product</th>
+                          <th class="u-border-3 u-border-palette-2-base u-table-cell">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="u-align-center u-table-body">
+                        <tr style="height: 46px;">
+                          <td class="u-border-1 u-border-palette-2-base u-table-cell">IBM Watson Assistant Chatbot</td>
+                          <td class="u-border-1 u-border-palette-2-base u-table-cell">A chatbot feature built using IBM Watson Assistant. The chatbot will be used to answer questions, gather data and solve customer issues in an interactive, conversational manner. </td>
+                        </tr>
+                        <tr style="height: 46px;">
+                          <td class="u-border-1 u-border-palette-2-base u-table-cell">IBM Visual Recognition</td>
+                          <td class="u-border-1 u-border-palette-2-base u-table-cell">A visual recognition product to scan images for objects, in this case plants and disease, and classify them.</td>
+                        </tr>
+                        <tr style="height: 46px;">
+                          <td class="u-border-1 u-border-palette-2-base u-table-cell">Watson Machine Learning and AutoAI</td>
+                          <td class="u-border-1 u-border-palette-2-base u-table-cell">Allows developers to deploy machine learning models with continuous learning. Can automatically generate APIs to build AI-powered applications, like Green Thumb. AutoAI is an add-on to Watson Machine Learning that automatically prepares data, applies algorithms and attempts to build ML models best suited for our needs. </td>
+                        </tr>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </p>
+                <p><b>Visual Recognition</b></p>
+                <p>With IBM Watson Visual Recognition you are able to use a general pre-built model and then teach it using our own images and keyword classes. After uploading the pictures and selecting the relevant keywords detected in the images, you are given generated code snippets in various languages such as Java, Python and Ruby, to reference the various keywords in your code.</p>
+                <p>The visual recognition tool will be used for identifying species and diagnosing diseases. If users are unsure of a plants’ exact species, all they have to do is take a photo and our visual recognition tool will identify species based on detections of leaf colour, shapes size etc. For diagnosis users will be able to simply take a photo and the visual recognition tool will observe any indicators of disease such as brown leaf spots or pests.</p>
+                <img src="images/watson1.png" alt="" class="center">
+                <p>Watson can supply the Python code snippets below to classify images against your model as outlined below</p>
+                <div id="overflowTest" class="center"><b>pip</b>
+                  <br>pip install --upgrade "watson-developer-cloud>=2.4.1"
+                  <br><br><b>Authentication</b>
+                  <br>from watson_developer_cloud import VisualRecognitionV3
+                  <br>
+                  <br>visual_recognition = VisualRecognitionV3(
+                    <br>version='{version}',
+                  <br>iam_apikey='{apikey}'
+                  <br>)
+                  <br>
+                  <br><b>Classify an Image</b>
+                  <br>import json
+                  <br>from watson_developer_cloud import VisualRecognitionV3
+                  <br>
+                  <br>visual_recognition = VisualRecognitionV3(
+                  <br>iam_apikey='{iam_api_key}')
+                  <br>
+                  <br>with open('./fruitbowl.jpg', 'rb') as images_file:
+                  <br>classes = visual_recognition.classify(
+                  <br>images_file,
+                  <br>threshold='0.6',
+                  <br>classifier_ids='DefaultCustomModel_1315631020').get_result()
+                  <br>print(json.dumps(classes, indent=2))
+                </div>
+              <p><b>Chatbot</b></p>
+              <p>The chatbot will be built using IBM Watson Assistant. The chatbot is built by creating ‘skills’ which use intents, entities and dialog to have a conversation with customers. An intent is how the bot understands and reads the customer questions.To create an intent, a range of similar questions that require similar answers are input and classified together. Entities hold the information that is used to answer questions and are collected within synonyms and definitions. The dialog is then created to act as a script for the chatbot to converse with customers. The dialog is triggered by intents and entities detected in a customer’s question. The chatbot then stores analytics from these customer interactions so that it can be constantly improved over time. </p>
+              <img src="images/chatbot.png" alt="" class="center">
+              <p><b>Machine Learning Model</b></p>
+                <p>For the machine learning model we will be using IBM Watson Machine Learning. Here we will enter data curated by horticultural experts to teach the model our product specific information.  IBM Watson uses ‘transfer learning’ which enables machine learning to be executed and tailored quickly and easily. The transferred learning is a three layered model made up of:
+                  <ol>
+                    <li>General knowledge</li>
+                    <li>Industry Specific Knowledge</li>
+                    <li>Customer specific learning</li>
+                  </ol>
+                </p>
+                <p>These three layers enable IBM Watson to learn more from smaller sets of data and also ensures that your business data remains your own. The data is shared on a strict one-way path from bottom to top, meaning that any customer specific data is safe from being distributed.</p>
+                <p>As per the feedback from assignment 2, we were advised to do some more research into machine learning and AI so we skipped ahead in our course modules to access appropriate learning materials. We learnt about decision trees for classification and supervised learning models. We decided that these were the appropriate machine learning strategies for Green Thumb as this would ensure we are using data from trusted horticultural resources, rather than random and possibly inaccurate data found on the internet. The first step of planning the AI strategy was to find the appropriate software for creating the various components required for the project. This actually began by looking into the visual recognition software, we looked at a range of different products such as Amazon Rekognition, Azure Custom Vision Google Cloud Vision and Classifai. Eventually we found IBM Watson Visual Recognition and decided that it was the most appropriate software to fit our project based on it being relatively easy to use.</p>
+                <p>As per the feedback from assignment 2, we were advised to do some more research into machine learning and AI so we skipped ahead in our course modules to access appropriate learning materials. We learnt about decision trees for classification and supervised learning models. We decided that these were the appropriate machine learning strategies for Green Thumb as this would ensure we are using data from trusted horticultural resources, rather than random and possibly inaccurate data found on the internet. The first step of planning the AI strategy was to find the appropriate software for creating the various components required for the project. This actually began by looking into the visual recognition software, we looked at a range of different products such as Amazon Rekognition, Azure Custom Vision Google Cloud Vision and Classifai. Eventually we found IBM Watson Visual Recognition and decided that it was the most appropriate software to fit our project based on it being relatively easy to use.</p>
+                <p>As per the feedback from assignment 2, we were advised to do some more research into machine learning and AI so we skipped ahead in our course modules to access appropriate learning materials. We learnt about decision trees for classification and supervised learning models. We decided that these were the appropriate machine learning strategies for Green Thumb as this would ensure we are using data from trusted horticultural resources, rather than random and possibly inaccurate data found on the internet. The first step of planning the AI strategy was to find the appropriate software for creating the various components required for the project. This actually began by looking into the visual recognition software, we looked at a range of different products such as Amazon Rekognition, Azure Custom Vision Google Cloud Vision and Classifai. Eventually we found IBM Watson Visual Recognition and decided that it was the most appropriate software to fit our project based on it being relatively easy to use.</p>
               </div>
             </div>
           </div>
@@ -396,10 +484,10 @@
               <li>Devised a strategy to build and deploy the Green Thumb AI</li>
             </ol>
           </p>
-          <p>The next steps for the soil probe is to engage with C#/C++ engineers who wil…</p>
-          <p>The user interface for the Green Thumb app has now been designed so the next logical step will be to develop the app. A software architect will be required to build the app within Swift and JAVA IDEs to ensure the app is compatible for both android and iOS devices. The software architect may use the UI prototype as a template, however, it is advisable that they engage with UI and UX specialists who can further develop the front-end to ensure a smooth user experience and streamlined design to further differentiate Green Thumb from its competitors. Additionally, the software architect will be required to build and secure the Green Thumb database using the mySQL code snippet and database ER diagram as a guide.</p>
-          <p>The next steps for getting the Green Thumb AI deployed will be employing a Data Scientist or Machine-Learning Engineer. We have researched and selected the software that we want to use, therefore we would ideally be booking for someone with experience using IBM Studio and someone with expertise coding in Java or Python. We would also need to employ a horticulturalist to curate the data for the supervised machine learning model with accurate expert information on the plants. This is critical as the values entered into our system will need to be well researched in order for our product to be accurate and competitive.</p>
-          <p>As the number of team members working on this project grows it will be necessary to educate staff on Cybersecurity to avoid phishing and similar attacks. More sophisticated Cybersecurity measures will need to be implemented as time goes by and new technology emerges. Consulting with cybersecurity professionals would be very beneficial in the future to avoid any new form of data breach and to periodically check up on systems to ensure they are uncompromised. Green Thumb’s data will become more and more valuable, as such, it would also be wise to consider hiring or setting up a backup of the servers and databases in case of a major hardware breach or failure. This will allow Green Thumb to keep operating even after a catastrophic event.</p>
+          <p>The next steps for the soil probe is to engage with C#/C++ engineers who will make improvements to the prototypes. They can either source and build, or design and 3D print a rigid and waterproof housing for the Green Thumb Probe. Additionally if another team were to take over the project, the main things they would need to know regarding the tools and technology aspect would be the code for the D1 mini and how the interface of the Blynk app was set up including the authID which contains the key to the receiving value from the board over the WiFi.</p>
+          <p>TThe user interface for the Green Thumb app has now been designed so the next logical step will be to develop the app. A software architect will be required to build the app within Swift and JAVA IDEs to ensure the app is compatible for both android and iOS devices. The software architect may use the UI prototype as a template, however, it is advisable that they engage with UI and UX specialists who can further develop the front-end to ensure a smooth user experience and streamlined design to further differentiate Green Thumb from its competitors. Additionally, the software architect will be required to build and secure the Green Thumb database using the mySQL code snippet and database ER diagram as a guide. </p>
+          <p>The next steps for getting the Green Thumb AI deployed will be employing a Data Scientist or Machine-Learning Engineer. We have researched and selected the software that we want to use, therefore we would ideally be looking for someone with experience using IBM Studio and someone with expertise coding in Java or Python. We would also need to employ a horticulturalist to curate the data for the supervised machine learning model with accurate expert information on the plants. This is critical as the values entered into our system will need to be well researched in order for our product to be accurate and competitive. </p>
+          <p>AAs the number of team members working on this project grows it will be necessary to educate staff on Cybersecurity to avoid phishing and similar attacks. More sophisticated Cybersecurity measures will need to be implemented as time goes by and new technology emerges. Consulting with cybersecurity professionals would be very beneficial in the future to avoid any new form of data breach and to periodically check up on systems to ensure they are uncompromised. Green Thumb’s data will become more and more valuable, as such, it would also be wise to consider hiring or setting up a backup of the servers and databases in case of a major hardware breach or failure. This will allow Green Thumb to keep operating even after a catastrophic event. </p>
           <p>Finally, once these technologies and systems are fully developed it will be essential to engage with marketing consultants to develop a plan to get Green Thumb on the market. The app will need to be hosted on both iOS and android app marketplaces and the soil probes will need to be made available for purchase through an e-commerce channel and related retailers such as Bunnings Warehouse and Flower Power. ABRAIN has worked hard to get this project to where it is now, we are putting our faith in your capable hands and cannot wait to see what becomes of Green Thumb. Good luck!</p>
         </div>
       </section>
